@@ -7,8 +7,26 @@ git remote -pr
 git log : history commit
 git log --oneline
 
-git branch 
+git branch namebranch
 
 git checkout branch
 
+git merge
 
+git tag
+
+git stash
+
+git rebase
+
+git push
+
+git pull
+
+git clone
+
+git branch -D namebranch : delete branch
+
+git checkout -b namebranch : create branch and checkout to branch
+
+git merge namebranch : merge namebranch to branch now
