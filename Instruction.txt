@@ -30,3 +30,4 @@ git branch -D namebranch : delete branch
 git checkout -b namebranch : create branch and checkout to branch
 
 git merge namebranch : merge namebranch to branch now
+
