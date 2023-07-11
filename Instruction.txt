@@ -14,7 +14,7 @@ git checkout branch
 
 git merge
 
-git tag
+git tag ""
 
 git stash
 
@@ -26,13 +26,23 @@ git pull
 
 git clone
 
-git branch -D namebranch : delete branch
+git branch -D namebranch : delete branch local
+git push origin -d namebranch : delete branch remote
 
 git checkout -b namebranch : create branch and checkout to branch
 
 git merge namebranch : merge namebranch to branch now
 
-git commit --amend -m "": overwite commit last
+git commit --amend -m "": overwite commit last local
+git push -f origin namebranch : overwite commit local to remote
 
 git reset --hard HEAD~1 : delete commit last
 git reset --soft HEAD~1 : no delete commit last
+
+git reset --hard HEAD~n : n number commit need delete and return commit before
+
+git reset --hard HEAD or git reset --hard : delete change in file
+
+git push origin tag
+
+git checkout 1989e02 -b newbranch
