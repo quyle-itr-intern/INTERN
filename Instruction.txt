@@ -47,3 +47,5 @@ git push origin tag
 
 git checkout 1989e02 -b newbranch : return commit before create newbranch
 git checkout 1989e02 : return commit before no create newbranch
+
+
