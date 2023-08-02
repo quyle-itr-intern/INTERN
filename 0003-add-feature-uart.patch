@@ -1,0 +1,49 @@
+From 4051eff425b66800e1d7e1d15eacb6ab3c384206 Mon Sep 17 00:00:00 2001
+From: quyleHCMUT <levanquy2112017@gmail.com>
+Date: Thu, 20 Jul 2023 17:24:44 +0700
+Subject: [PATCH 3/4] add feature uart
+
+---
+ Instruction.txt | 2 ++
+ main.c          | 1 +
+ uart.c          | 3 +++
+ uart.h          | 0
+ 4 files changed, 6 insertions(+)
+ create mode 100644 uart.c
+ create mode 100644 uart.h
+
+diff --git a/Instruction.txt b/Instruction.txt
+index 12ea144..d7048a6 100644
+--- a/Instruction.txt
++++ b/Instruction.txt
+@@ -47,3 +47,5 @@ git push origin tag
+ 
+ git checkout 1989e02 -b newbranch : return commit before create newbranch
+ git checkout 1989e02 : return commit before no create newbranch
++
++
+diff --git a/main.c b/main.c
+index f5a857f..af2b66a 100644
+--- a/main.c
++++ b/main.c
+@@ -1,4 +1,5 @@
+ #include "stdio.h"
++#include "uart.h"
+ 
+ int main()
+ {
+diff --git a/uart.c b/uart.c
+new file mode 100644
+index 0000000..f9d6788
+--- /dev/null
++++ b/uart.c
+@@ -0,0 +1,3 @@
++#include "uart.h"
++
++
+diff --git a/uart.h b/uart.h
+new file mode 100644
+index 0000000..e69de29
+-- 
+2.33.1.windows.1
+

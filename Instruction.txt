@@ -56,4 +56,11 @@ git rebase -i 1989e02 => i : INSERT, :wq : WRITE AND QUIT
 
 git branch -a : List local and remote branches
 
+file ...
 
+Kiểm tra xem patch sẽ thực hiện những thay đổi gì
+git apply --stat file.patch
+Kiểm tra xem file có apply được vô source code hay không
+git apply --check file.patch
+Thực hiện apply
+git am --signoff < file.patch

@@ -1,0 +1,116 @@
+From a8185575473dd1718f88d4cadd27db151f003550 Mon Sep 17 00:00:00 2001
+From: quyleHCMUT-K19 <levanquy2112017@gmail.com>
+Date: Mon, 10 Jul 2023 22:19:41 +0700
+Subject: [PATCH 2/4] LVQ
+
+master
+
+OK
+
+OK
+
+OK
+
+OK
+
+OK-1
+---
+ Instruction.txt | 49 +++++++++++++++++++++++++++++++++++++++++++++++++
+ gpio.c          | 11 +++++++++++
+ main.c          |  5 ++++-
+ 3 files changed, 64 insertions(+), 1 deletion(-)
+ create mode 100644 Instruction.txt
+ create mode 100644 gpio.c
+
+diff --git a/Instruction.txt b/Instruction.txt
+new file mode 100644
+index 0000000..12ea144
+--- /dev/null
++++ b/Instruction.txt
+@@ -0,0 +1,49 @@
++
++git config --global user.name "..."
++git config --global user.email "..."
++
++git remote -pr
++
++git log : history commit
++git log --oneline
++
++git branch namebranch
++git branch -a
++
++git checkout branch
++
++git merge
++
++git tag ""
++
++git stash
++
++git rebase
++
++git push
++
++git pull
++
++git clone
++
++git branch -D namebranch : delete branch local
++git push origin -d namebranch : delete branch remote
++
++git checkout -b namebranch : create branch and checkout to branch
++
++git merge namebranch : merge namebranch to branch now
++
++git commit --amend -m "": overwite commit last local
++git push -f origin namebranch : overwite commit local to remote
++
++git reset --hard HEAD~1 : delete commit last
++git reset --soft HEAD~1 : no delete commit last
++
++git reset --hard HEAD~n : n number commit need delete and return commit before
++
++git reset --hard HEAD or git reset --hard : delete change in file
++
++git push origin tag
++
++git checkout 1989e02 -b newbranch : return commit before create newbranch
++git checkout 1989e02 : return commit before no create newbranch
+diff --git a/gpio.c b/gpio.c
+new file mode 100644
+index 0000000..0b646e2
+--- /dev/null
++++ b/gpio.c
+@@ -0,0 +1,11 @@
++#include "stdio.h"
++
++int main()
++{
++
++    printf("Hello World\n");
++
++    int x = 0;
++
++    return 1;
++}
+\ No newline at end of file
+diff --git a/main.c b/main.c
+index 0b646e2..f5a857f 100644
+--- a/main.c
++++ b/main.c
+@@ -6,6 +6,9 @@ int main()
+     printf("Hello World\n");
+ 
+     int x = 0;
++    int y = 0;
+ 
+     return 1;
+-}
+\ No newline at end of file
++}
++
++
+-- 
+2.33.1.windows.1
+

@@ -1,0 +1,59 @@
+From fe4000943e54989a15f65571753b936bf1f0e777 Mon Sep 17 00:00:00 2001
+From: quyleHCMUT-K19 <levanquy2112017@gmail.com>
+Date: Mon, 10 Jul 2023 21:48:13 +0700
+Subject: [PATCH 1/4] LVQ
+
+---
+ .vscode/settings.json | 23 ++++++++++++++++++++++-
+ main.c                |  2 ++
+ 2 files changed, 24 insertions(+), 1 deletion(-)
+
+diff --git a/.vscode/settings.json b/.vscode/settings.json
+index 0e52739..9a62a72 100644
+--- a/.vscode/settings.json
++++ b/.vscode/settings.json
+@@ -31,5 +31,26 @@
+     "**/.*/**",
+     "**/.vscode",
+     "**/.vscode/**"
+-  ]
++  ],
++  "C_Cpp_Runner.msvcWarnings": [
++    "/W4",
++    "/permissive-",
++    "/w14242",
++    "/w14287",
++    "/w14296",
++    "/w14311",
++    "/w14826",
++    "/w44062",
++    "/w44242",
++    "/w14905",
++    "/w14906",
++    "/w14263",
++    "/w44265",
++    "/w14928"
++  ],
++  "C_Cpp_Runner.useAddressSanitizer": false,
++  "C_Cpp_Runner.useUndefinedSanitizer": false,
++  "C_Cpp_Runner.useLeakSanitizer": false,
++  "C_Cpp_Runner.showCompilationTime": false,
++  "C_Cpp_Runner.useLinkTimeOptimization": false
+ }
+\ No newline at end of file
+diff --git a/main.c b/main.c
+index fcb6c01..0b646e2 100644
+--- a/main.c
++++ b/main.c
+@@ -5,5 +5,7 @@ int main()
+ 
+     printf("Hello World\n");
+ 
++    int x = 0;
++
+     return 1;
+ }
+\ No newline at end of file
+-- 
+2.33.1.windows.1
+

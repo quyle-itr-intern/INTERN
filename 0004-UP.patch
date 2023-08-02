@@ -1,0 +1,54 @@
+From 17b3472bda694776bf0df748484b4a00e94c8905 Mon Sep 17 00:00:00 2001
+From: quyleHCMUT <levanquy2112017@gmail.com>
+Date: Wed, 2 Aug 2023 15:56:46 +0700
+Subject: [PATCH 4/4] UP
+
+---
+ .vscode/launch.json |  4 ++--
+ Instruction.txt     | 10 +++++++++-
+ 2 files changed, 11 insertions(+), 3 deletions(-)
+
+diff --git a/.vscode/launch.json b/.vscode/launch.json
+index 7ad7d1b..aed86c6 100644
+--- a/.vscode/launch.json
++++ b/.vscode/launch.json
+@@ -8,8 +8,8 @@
+       "args": [],
+       "stopAtEntry": false,
+       "externalConsole": true,
+-      "cwd": "e:/Downloads/INTERN/Test",
+-      "program": "e:/Downloads/INTERN/Test/build/Debug/outDebug",
++      "cwd": "e:/Downloads/INTERN/Test/INTERN",
++      "program": "e:/Downloads/INTERN/Test/INTERN/build/Debug/outDebug",
+       "MIMode": "gdb",
+       "miDebuggerPath": "gdb",
+       "setupCommands": [
+diff --git a/Instruction.txt b/Instruction.txt
+index d7048a6..06db8ce 100644
+--- a/Instruction.txt
++++ b/Instruction.txt
+@@ -16,7 +16,9 @@ git merge
+ 
+ git tag ""
+ 
+-git stash
++git stash : save data locate another 
++git stash list
++git stash pop
+ 
+ git rebase
+ 
+@@ -48,4 +50,10 @@ git push origin tag
+ git checkout 1989e02 -b newbranch : return commit before create newbranch
+ git checkout 1989e02 : return commit before no create newbranch
+ 
++git revert : return commit before 
++
++git rebase -i 1989e02 => i : INSERT, :wq : WRITE AND QUIT
++
++git branch -a : List local and remote branches
++
+ 
+-- 
+2.33.1.windows.1
+
