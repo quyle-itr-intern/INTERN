@@ -16,7 +16,9 @@ git merge
 
 git tag ""
 
-git stash
+git stash : save data locate another 
+git stash list
+git stash pop
 
 git rebase
 
@@ -47,5 +49,11 @@ git push origin tag
 
 git checkout 1989e02 -b newbranch : return commit before create newbranch
 git checkout 1989e02 : return commit before no create newbranch
+
+git revert : return commit before 
+
+git rebase -i 1989e02 => i : INSERT, :wq : WRITE AND QUIT
+
+git branch -a : List local and remote branches
 
 
